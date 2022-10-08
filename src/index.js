@@ -10,7 +10,7 @@ import { ClientSideSuspense } from '@liveblocks/react';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <RoomProvider id='my-rool-id'>
+    <RoomProvider id='my-rool-id' initialPresence={{ cursor: null }}>
       <ClientSideSuspense fallback={<div>Loading...</div>}>
         {() => <App />}
       </ClientSideSuspense>
