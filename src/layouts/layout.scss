@@ -1,0 +1,27 @@
+header {
+  .logo {
+    display: block;
+    height: 54px;
+  }
+}
+
+.layout {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex-grow: 1;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 32px;
+
+  color: white;
+
+  background-color: var(--theme-secondary-color);
+}
